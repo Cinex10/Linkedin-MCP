@@ -14,9 +14,9 @@ class LinkedInConfig(BaseSettings):
     """LinkedIn API configuration settings."""
     
     # LinkedIn API credentials
-    client_id: str = Field(default="", env="LINKEDIN_CLIENT_ID")
-    client_secret: str = Field(default="", env="LINKEDIN_CLIENT_SECRET")
-    redirect_uri: str = Field(default="", env="LINKEDIN_REDIRECT_URI")
+    client_id: str = Field(default="", env="CLIENT_ID")
+    client_secret: str = Field(default="", env="CLIENT_SECRET")
+    redirect_uri: str = Field(default="", env="REDIRECT_URI")
     
     # OAuth 2.0 settings
     authorization_base_url: str = "https://www.linkedin.com/oauth/v2/authorization"
@@ -100,11 +100,11 @@ def validate_config() -> bool:
         
         # Check required fields
         if not config.client_id:
-            logger.error("LINKEDIN_CLIENT_ID is required but not set")
+            logger.error("CLIENT_ID is required but not set")
             return False
             
         if not config.client_secret:
-            logger.error("LINKEDIN_CLIENT_SECRET is required but not set")
+            logger.error("CLIENT_SECRET is required but not set")
             return False
             
         logger.info("Configuration validation passed")

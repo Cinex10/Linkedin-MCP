@@ -13,9 +13,9 @@ services:
       - MCP_SERVER_PORT=8000
       
       # LinkedIn API credentials (set these in .env file)
-      - LINKEDIN_CLIENT_ID=${LINKEDIN_CLIENT_ID}
-      - LINKEDIN_CLIENT_SECRET=${LINKEDIN_CLIENT_SECRET}
-      - LINKEDIN_REDIRECT_URI=${LINKEDIN_REDIRECT_URI}
+      - CLIENT_ID=${CLIENT_ID}
+      - CLIENT_SECRET=${CLIENT_SECRET}
+      - REDIRECT_URI=${REDIRECT_URI}
     
     # Mount environment file
     env_file:

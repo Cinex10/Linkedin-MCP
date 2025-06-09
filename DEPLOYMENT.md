@@ -10,9 +10,9 @@ Create a `.env` file with your LinkedIn API credentials:
 
 ```bash
 # LinkedIn API Settings
-LINKEDIN_CLIENT_ID=your_linkedin_client_id_here
-LINKEDIN_CLIENT_SECRET=your_linkedin_client_secret_here
-LINKEDIN_REDIRECT_URI=https://your-domain.com/callback
+CLIENT_ID=your_CLIENT_ID_here
+CLIENT_SECRET=your_CLIENT_SECRET_here
+REDIRECT_URI=https://your-domain.com/callback
 
 # Production Settings
 PRODUCTION_MODE=true
@@ -103,9 +103,9 @@ export MCP_TRANSPORT=stdio
 | `MCP_SERVER_HOST` | `0.0.0.0` | Server bind address |
 | `MCP_SERVER_PORT` | `8000` | Server port |
 | `MCP_SERVER_NAME` | `LinkedIn MCP Server` | Server identification |
-| `LINKEDIN_CLIENT_ID` | - | LinkedIn OAuth client ID |
-| `LINKEDIN_CLIENT_SECRET` | - | LinkedIn OAuth client secret |
-| `LINKEDIN_REDIRECT_URI` | - | OAuth callback URL |
+| `CLIENT_ID` | - | LinkedIn OAuth client ID |
+| `CLIENT_SECRET` | - | LinkedIn OAuth client secret |
+| `REDIRECT_URI` | - | OAuth callback URL |
 
 ## 🔒 Production Security
 

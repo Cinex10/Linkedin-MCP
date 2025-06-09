@@ -175,7 +175,7 @@ def authenticate_linkedin_oauth(scopes: Optional[List[str]] = None, timeout: int
     try:
         # Validate configuration
         if not validate_config():
-            return {"error": "LinkedIn credentials not configured. Please set LINKEDIN_CLIENT_ID, LINKEDIN_CLIENT_SECRET, and LINKEDIN_REDIRECT_URI environment variables."}
+            return {"error": "LinkedIn credentials not configured. Please set CLIENT_ID, CLIENT_SECRET, and REDIRECT_URI environment variables."}
         
         actual_port = port
         

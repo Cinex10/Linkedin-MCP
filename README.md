@@ -76,9 +76,9 @@ pip install -e .
 
 2. Edit `.env` with your LinkedIn API credentials:
    ```bash
-   LINKEDIN_CLIENT_ID=your_linkedin_client_id_here
-   LINKEDIN_CLIENT_SECRET=your_linkedin_client_secret_here
-   LINKEDIN_REDIRECT_URI=http://localhost:8080/callback
+   CLIENT_ID=your_CLIENT_ID_here
+   CLIENT_SECRET=your_CLIENT_SECRET_here
+   REDIRECT_URI=http://localhost:8080/callback
    ```
 
 ## Redirect URI Setup
@@ -129,7 +129,7 @@ You can use any redirect URI by:
 
 1. **Update your `.env` file:**
    ```bash
-   LINKEDIN_REDIRECT_URI=https://your-domain.com/callback
+   REDIRECT_URI=https://your-domain.com/callback
    ```
 
 2. **Configure the same URI in LinkedIn Developer Console:**
@@ -175,7 +175,7 @@ start_callback_server(port=8081)
 
 Your current redirect URI is set to: `http://localhost:8080/callback`
 
-To change it, update the `LINKEDIN_REDIRECT_URI` in your `.env` file.
+To change it, update the `REDIRECT_URI` in your `.env` file.
 
 ## Supported LinkedIn Scopes
 
@@ -405,7 +405,7 @@ uv run mypy linkedin_mcp_server/
 ### Common Issues
 
 1. **"Configuration validation failed"**
-   - Check that `LINKEDIN_CLIENT_ID` and `LINKEDIN_CLIENT_SECRET` are set
+   - Check that `CLIENT_ID` and `CLIENT_SECRET` are set
    - Verify the values are correct from LinkedIn Developer Portal
 
 2. **"Error during authentication process"**
